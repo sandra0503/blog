@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Antic+Didone&display=swap');
+@tailwind base;
+@tailwind components;
+
+@css {
+  body, html, #app {
+    height: 100%;
+  }
+
+  .btn {
+    @apply .lowercase .p-2 .m-2;
+    transition: background, color .5s;
+  }
+
+  .btn-secondary {
+    @apply .btn .bg-black .text-white;
+  }
+
+  .form-input {
+    @apply .flex .flex-col .mx-auto .my-4;
+  }
+
+  .input-label {
+    @apply .flex-initial .pr-8 .w-full .text-left;
+  }
+
+  .input-field,
+  input,
+  input:-webkit-autofill {
+    @apply .flex-1 .h-10 .py-3 .bg-white .w-full;
+    border-bottom: 1px solid #e6e6e6;
+    background-color: transparent !important;
+    -webkit-box-shadow:0 0 0 50px white inset;
+  }
+
+  .input-field:focus {
+    @apply .border-black;
+    outline: none;
+  }
+
+  @media (min-width: 768px) {
+    .btn:hover {
+      @apply .bg-black .text-white;
+    }
+
+    .btn-secondary:hover {
+      @apply .bg-black;
+    }
+
+    .form-input {
+      @apply .flex-row;
+    }
+
+    .input-label {
+      @apply .w-24;
+    }
+
+    .input-field {
+      @apply .w-auto .px-3;
+    }
+  }
+}
+
+@tailwind utilities;

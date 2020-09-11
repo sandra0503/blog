@@ -1,0 +1,22 @@
+{
+  "private": true,
+  "scripts": {
+    "contents:dev": "vuepress dev contents",
+    "contents:build": "vuepress build contents"
+  },
+  "devDependencies": {
+    "tailwindcss": "^1.0.1",
+    "vuepress": "^1.0.0-alpha.48"
+  },
+  "dependencies": {
+    "glhd-tailwindcss-transitions": "^0.3.0",
+    "smoothscroll": "^0.4.0",
+    "vuepress-plugin-smooth-scroll": "^0.0.3"
+  },
+  "name": "blog",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/sandra0503/blog.git",
+  "author": "Sandra Zollner <sandra_zollner@msn.com>",
+  "license": "MIT"
+}
