@@ -8,7 +8,7 @@ link: >-
   https://www.sueddeutsche.de/muenchen/ebersberg/versteckte-botschaft-home-im-farbenrausch-1.4510514
 date: '2019-07-03T10:54:00+02:00'
 source: Süddeutsche.de
-thumbnail: /images/sueddeutsche19022019.webp
+thumbnail: /images/sueddeutschefarbenrausch.png
 category: article
 ---
 
