@@ -1,22 +1,19 @@
 <template>
-  <router-link
-    :to="isBlogItem ? path : ''"
-    :href="link"
-    :target="isBlogItem ? '' : '_blank'"
-    class="app-article flex flex-col flex-1 items-center self-center md:mx-8 my-8 md:my-6"
-  >
+  <div>
     <div class="articleImage relative w-full mb-4">
       <img :src="this.$withBase(`${image}`)" :alt="imageAlt" />
       <span
         class="absolute px-1 bottom-0 left-0 text-white text-tiny bg-black bg-opacity-25"
-      >{{imageSource}}</span>
+        >{{ imageSource }}</span
+      >
     </div>
     <div class="w-full">
       <div class="flex flex-row items-center justify-between my-2">
         <span
           class="category p-2 bg-black text-white inline-block"
           v-if="categories[category]"
-        >{{ categories[category] }}</span>
+          >{{ categories[category] }}</span
+        >
         <div class="text-right">
           <p>{{ source }}</p>
           <p>{{ formattedDate }}</p>
@@ -25,7 +22,7 @@
       <h2 class="center my-4" v-if="title" v-html="title"></h2>
       <p v-html="description"></p>
     </div>
-  </router-link>
+  </div>
 </template>
 
 <script>
@@ -42,12 +39,9 @@ export default {
     date: String,
     category: String,
     source: String,
-    link: String,
     image: String,
     imageSource: String,
     imageAlt: String,
-    path: String,
-    isBlogItem: Boolean,
   },
   computed: {
     formattedDate() {
