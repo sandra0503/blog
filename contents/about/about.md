@@ -1,5 +1,5 @@
 ---
 description: Freie Journalistin und Studentin Kulturjournalismus in Berlin
-image: ''
+image: /images/sabina.jpg
 ---
 
