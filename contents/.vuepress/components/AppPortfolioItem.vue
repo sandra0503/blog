@@ -1,11 +1,15 @@
 <template>
-  <a
+  <router-link
+    :to="isBlogItem ? path : ''"
     :href="link"
-    target="_blank"
+    :target="isBlogItem ? '' : '_blank'"
     class="app-article flex flex-col flex-1 items-center self-center md:mx-8 my-8 md:my-6"
   >
-    <div class="articleImage w-full mb-4">
-      <img :src="this.$withBase(`${image}`)" />
+    <div class="articleImage relative w-full mb-4">
+      <img :src="this.$withBase(`${image}`)" :alt="imageAlt" />
+      <span
+        class="absolute px-1 bottom-0 left-0 text-white text-tiny bg-black bg-opacity-25"
+      >{{imageSource}}</span>
     </div>
     <div class="w-full">
       <div class="flex flex-row items-center justify-between my-2">
@@ -21,7 +25,7 @@
       <h2 class="center my-4" v-if="title" v-html="title"></h2>
       <p v-html="description"></p>
     </div>
-  </a>
+  </router-link>
 </template>
 
 <script>
@@ -40,7 +44,10 @@ export default {
     source: String,
     link: String,
     image: String,
-    alignment: String,
+    imageSource: String,
+    imageAlt: String,
+    path: String,
+    isBlogItem: Boolean,
   },
   computed: {
     formattedDate() {

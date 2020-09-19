@@ -1,18 +1,27 @@
 <template>
-  <div class="flex flex-col h-full">
+  <main class="p-container text-black">
     <AppNav />
-    <Content class="flex-1 max-w-xl mx-auto leading-normal" />
-    <Footer class="pin-b" />
-  </div>
+    <div class="container mx-auto md:px-64 flex flex-col h-full">
+      <div class="articleImage w-full mb-4">
+        <img :src="this.$withBase(`${this.$page.frontmatter.thumbnail}`)" />
+      </div>
+      <div class="px-6 md:px-0">
+        <h1 v-html="title"></h1>
+        <Content class="mx-auto" />
+      </div>
+      <Footer />
+    </div>
+  </main>
 </template>
 
 <script>
-import Footer from "@theme/components/Footer";
-import AppNav from "@theme/components/AppNav";
-
 export default {
-  components: { AppNav, Footer },
   name: "Layout",
+  computed: {
+    title() {
+      return this.$page.title;
+    },
+  },
 };
 </script>
 

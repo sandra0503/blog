@@ -28,12 +28,25 @@ collections:
           required: false,
         }
       - {
+          label: "Image Source",
+          name: "imageSource",
+          widget: "string",
+          required: false,
+        }
+      - {
+          label: "Image alt (important for screen readers)",
+          name: "imageAlt",
+          widget: "string",
+          required: false,
+        }
+      - {
           label: "Category",
           name: "category",
           widget: "select",
           options: ["audio", "video", "article"],
           required: false,
         }
+      - { label: "Body", name: "body", widget: "markdown" }
   - name: "aboutme" # Used in routes, e.g., /admin/collections/blog
     label: "About me" # Used in the UI
     folder: "contents/about" # The path to the folder where the documents are stored
@@ -44,3 +57,38 @@ collections:
       - { label: "Headline", name: "headline", widget: "string" }
       - { label: "Description", name: "description", widget: "string" }
       - { label: "Image", name: "image", widget: "image", required: false }
+  - name: "blog" # Used in routes, e.g., /admin/collections/blog
+    label: "Blog Item" # Used in the UI
+    folder: "contents/blog" # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
+    fields: # The fields for each document, usually in front matter
+      - { label: "Title", name: "title", widget: "string" }
+      - {
+          label: "Description",
+          name: "description",
+          widget: "string",
+          required: false,
+        }
+      - { label: "Publish Date", name: "date", widget: "datetime" }
+      - { label: "Source", name: "source", widget: "string", required: false }
+      - {
+          label: "Featured Image",
+          name: "thumbnail",
+          widget: "image",
+          required: false,
+        }
+      - {
+          label: "Image Source",
+          name: "imageSource",
+          widget: "string",
+          required: false,
+        }
+      - {
+          label: "Category",
+          name: "category",
+          widget: "select",
+          options: ["audio", "video", "article"],
+          required: false,
+        }
+      - { label: "Body", name: "body", widget: "markdown" }

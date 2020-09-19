@@ -6,10 +6,11 @@ description: >-
   für andere bedeutet das neue Normal eine Krise.
 link: >-
   https://www.deutschlandfunkkultur.de/veraenderter-alltag-das-neue-normal-perspektive-oder-krise.3991.de.html?dram:article_id=481952
-date: '2020-08-09T12:09:00+02:00'
+date: "2020-08-09T12:09:00+02:00"
 source: Deutschlandfunk Kultur
 thumbnail: >-
   /images/306df87893030e266db656960e4a207av1_max_635x357_b3535db83dc50e27c1bb1392364c95a2.jpg
+imageSource: (Eyeem / Azamat Mukanov)
+imageAlt: Frau mit Blumen Maske
 category: audio
 ---
-

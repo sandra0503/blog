@@ -9,7 +9,10 @@
       >
         <h1>{{ $site.title }}</h1>
       </router-link>
-      <ul class="list-reset mt-2 w-4/5 md:w-1/2 lg:w-1/4 self-center flex items-center">
+      <ul
+        class="list-reset mt-2 w-4/5 md:w-1/2 lg:w-1/4 self-center flex items-center"
+        v-if="showNavItems"
+      >
         <li v-for="item in navItems" class="w-1/3">
           <a
             :href="item.link"
@@ -26,6 +29,9 @@
 <script>
 export default {
   name: "AppNav",
+  props: {
+    showNavItems: Boolean,
+  },
   computed: {
     navItems() {
       const base = this.$site.base;

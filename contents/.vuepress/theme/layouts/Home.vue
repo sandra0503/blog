@@ -1,6 +1,6 @@
 <template>
   <main class="p-container text-black">
-    <AppNav class="mt-8" />
+    <AppNav class="mt-8" showNavItems />
     <div v-if="data.about" class="bg-white w-full">
       <div
         class="container flex flex-col md:mt-8 md:flex-row mx-auto pt-4 md:pt-6 px-6 py-10 md:py-16"
@@ -16,7 +16,29 @@
         </div>
       </div>
     </div>
-    <div class="w-full" id="skills">
+    <div class="w-full" :v-if="blogItems.length > 0">
+      <div class="container relative mx-auto px-6 pt-6">
+        <h1 class="font-headline md:text-center">Blog</h1>
+        <div class="flex flex-col flex-wrap lg:flex-row">
+          <div v-for="item in blogItems" class="lg:w-1/3">
+            <AppPortfolioItem
+              :title="item.frontmatter.title"
+              :description="item.frontmatter.description"
+              :date="item.frontmatter.date"
+              :category="item.frontmatter.category"
+              :source="item.frontmatter.source"
+              :link="item.frontmatter.link"
+              :image="item.frontmatter.thumbnail"
+              :imageSource="item.frontmatter.imageSource"
+              :imageAlt="item.frontmatter.imageAlt"
+              :path="item.path"
+              :isBlogItem="true"
+            ></AppPortfolioItem>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="w-full" id="skills" :v-if="portfolio.length > 0">
       <div class="container relative mx-auto px-6 pt-6">
         <h1 class="font-headline md:text-center">{{ data.experience.headline }}</h1>
         <div class="flex flex-col flex-wrap lg:flex-row">
@@ -29,6 +51,10 @@
               :source="item.frontmatter.source"
               :link="item.frontmatter.link"
               :image="item.frontmatter.thumbnail"
+              :imageSource="item.frontmatter.imageSource"
+              :imageAlt="item.frontmatter.imageAlt"
+              :path="item.path"
+              :hasBody="!!item.frontmatter.body"
             ></AppPortfolioItem>
           </div>
         </div>
@@ -47,13 +73,7 @@
 </template>
 
 <script>
-import ContactForm from "@theme/components/ContactForm";
-import Footer from "@theme/components/Footer";
-import AppNav from "@theme/components/AppNav";
-import AppPortfolioItem from "@theme/components/atoms/AppPortfolioItem";
-
 export default {
-  components: { AppNav, Footer, AppPortfolioItem, ContactForm },
   name: "Home",
   computed: {
     data() {
@@ -72,6 +92,17 @@ export default {
         .filter(
           (page) =>
             page.path.startsWith("/portfolio/") && !page.frontmatter.blog_index
+        )
+        .sort(
+          (a, b) => new Date(b.frontmatter.date) - new Date(a.frontmatter.date)
+        );
+    },
+
+    blogItems() {
+      return this.$site.pages
+        .filter(
+          (page) =>
+            page.path.startsWith("/blog/") && !page.frontmatter.blog_index
         )
         .sort(
           (a, b) => new Date(b.frontmatter.date) - new Date(a.frontmatter.date)
