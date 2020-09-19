@@ -5,12 +5,12 @@
       <div class="container flex flex-col md:flex-row mx-auto px-6 py-10 md:py-16">
         <div class="flex flex-1">
           <div class="self-center w-56 md:w-64 py-2 mx-auto">
-            <img :src="$withBase(data.about.image.source)" :alt="data.about.image.alt" />
+            <img :src="aboutMe.frontmatter.image" :alt="data.about.image.alt" />
           </div>
         </div>
         <div class="flex-1 mt-3 md:mt-0">
           <h1 class="font-headline text-4xl">{{ data.about.headline }}</h1>
-          <p class="mt-4" v-html="data.about.text"></p>
+          <p class="mt-4" v-html="aboutMe.frontmatter.description"></p>
         </div>
       </div>
     </div>
@@ -58,7 +58,7 @@ export default {
       return this.$page.frontmatter;
     },
 
-    about() {
+    aboutMe() {
       return this.$site.pages.find(
         (page) =>
           page.path.startsWith("/about/") && !page.frontmatter.blog_index

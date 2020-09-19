@@ -1,5 +1,4 @@
 ---
-category: article
 title: Home im Farbenrausch
 description: >-
   Der international bekannte Künstler Daniel Man gestaltet eine zweite Wand im
@@ -7,8 +6,9 @@ description: >-
   Jugendlichen widerspiegeln.
 link: >-
   https://www.sueddeutsche.de/muenchen/ebersberg/versteckte-botschaft-home-im-farbenrausch-1.4510514
-date: '2019-07-03T09:58:00+02:00'
+date: '2020-09-19T10:54:39+02:00'
 source: Süddeutsche.de
-thumbnail: /docs/.vuepress/dist/1280x720.webp
+thumbnail: /contents/.vuepress/dist/media/sueddeutsche19022019.webp
+category: article
 ---
 
