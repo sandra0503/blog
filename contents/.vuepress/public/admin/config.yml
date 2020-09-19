@@ -2,7 +2,7 @@ backend:
   name: github
   repo: sandra0503/blog
   branch: master # Branch to update (optional; defaults to master)
-media_folder: "contents/media"
+media_folder: "contents/.vuepress/public/images"
 collections:
   - name: "portfolio" # Used in routes, e.g., /admin/collections/blog
     label: "Portfolio" # Used in the UI
