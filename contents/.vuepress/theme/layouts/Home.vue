@@ -18,15 +18,16 @@
       <div class="container relative mx-auto px-6 py-10">
         <h1 class="font-headline text-center text-4xl mb-4">{{ data.experience.headline }}</h1>
         <div class="flex flex-col lg:flex-row">
-          <template v-for="article in data.experience.articles">
-            <AppArticle
-              :title="article.title"
-              :description="article.description"
-              :year="article.year"
-              :source="article.source"
-              :link="article.link"
-              :image="article.image"
-            ></AppArticle>
+          <template v-for="item in portfolio">
+            <AppPortfolioItem
+              :title="item.frontmatter.title"
+              :description="item.frontmatter.description"
+              :date="item.frontmatter.date"
+              :category="item.frontmatter.category"
+              :source="item.frontmatter.source"
+              :link="item.frontmatter.link"
+              :image="item.frontmatter.thumbnail"
+            ></AppPortfolioItem>
           </template>
         </div>
       </div>
@@ -47,14 +48,32 @@
 import ContactForm from "@theme/components/ContactForm";
 import Footer from "@theme/components/Footer";
 import AppNav from "@theme/components/AppNav";
-import AppArticle from "@theme/components/atoms/AppArticle";
+import AppPortfolioItem from "@theme/components/atoms/AppPortfolioItem";
 
 export default {
-  components: { AppNav, Footer, AppArticle, ContactForm },
+  components: { AppNav, Footer, AppPortfolioItem, ContactForm },
   name: "Home",
   computed: {
     data() {
       return this.$page.frontmatter;
+    },
+
+    about() {
+      return this.$site.pages.find(
+        (page) =>
+          page.path.startsWith("/about/") && !page.frontmatter.blog_index
+      );
+    },
+
+    portfolio() {
+      return this.$site.pages
+        .filter(
+          (page) =>
+            page.path.startsWith("/portfolio/") && !page.frontmatter.blog_index
+        )
+        .sort(
+          (a, b) => new Date(b.frontmatter.date) - new Date(a.frontmatter.date)
+        );
     },
   },
 };

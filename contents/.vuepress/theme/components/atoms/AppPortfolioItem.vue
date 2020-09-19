@@ -17,11 +17,12 @@
 
 <script>
 export default {
-  name: "AppArticle",
+  name: "AppPortfolioItem",
   props: {
     title: String,
     description: String,
-    year: Number,
+    date: String,
+    category: String,
     source: String,
     link: String,
     image: String,

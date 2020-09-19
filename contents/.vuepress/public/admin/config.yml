@@ -2,25 +2,42 @@ backend:
   name: github
   repo: sandra0503/blog
   branch: master # Branch to update (optional; defaults to master)
-media_folder: "docs/.vuepress/public/images"
-public_folder: "docs/.vuepress/dist/"
+media_folder: "images/uploads"
+public_folder: "contents/.vuepress/dist/"
 collections:
   - name: "portfolio" # Used in routes, e.g., /admin/collections/blog
     label: "Portfolio" # Used in the UI
-    folder: "_posts/portfolio" # The path to the folder where the documents are stored
+    folder: "contents/.vuepress/portfolio" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
     slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
     fields: # The fields for each document, usually in front matter
-      - { label: "Category", name: "category", widget: "string" }
       - { label: "Title", name: "title", widget: "string" }
-      - { label: "Description", name: "description", widget: "string" }
-      - { label: "Link", name: "link", widget: "string" }
+      - {
+          label: "Description",
+          name: "description",
+          widget: "string",
+          required: false,
+        }
+      - { label: "Link", name: "link", widget: "string", required: false }
       - { label: "Publish Date", name: "date", widget: "datetime" }
-      - { label: "Source", name: "source", widget: "string" }
-      - { label: "Featured Image", name: "thumbnail", widget: "image" }
+      - { label: "Source", name: "source", widget: "string", required: false }
+      - {
+          label: "Featured Image",
+          name: "thumbnail",
+          widget: "image",
+          required: false,
+        }
       - {
           label: "Category",
           name: "category",
           widget: "select",
           options: ["audio", "video", "article"],
+          required: false,
         }
+  - name: "about" # Used in routes, e.g., /admin/collections/blog
+    label: "About me" # Used in the UI
+    folder: "_about" # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
+    fields: # The fields for each document, usually in front matter
+      - { label: "Description", name: "description", widget: "string" }
