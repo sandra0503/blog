@@ -35,8 +35,8 @@ collections:
           required: false,
         }
   - name: "about" # Used in routes, e.g., /admin/collections/blog
-    label: "About me" # Used in the UI
-    folder: "_about" # The path to the folder where the documents are stored
+    label: "About" # Used in the UI
+    folder: "contents/.vuepress/about" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
     slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
     fields: # The fields for each document, usually in front matter
