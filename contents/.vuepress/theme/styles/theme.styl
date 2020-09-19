@@ -5,7 +5,12 @@
 
 @css {
   body, html, #app {
+    @apply .text-lg;
     height: 100%;
+  }
+
+  h1 {
+    @apply .text-3xl .font-semibold;
   }
 
   .btn {
@@ -40,6 +45,14 @@
   }
 
   @media (min-width: 768px) {
+    body, html, #app {
+      @apply .text-base;
+    }
+
+    h1 {
+      @apply .text-4xl;
+    }
+
     .btn:hover {
       @apply .bg-black .text-white;
     }

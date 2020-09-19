@@ -4,16 +4,22 @@
     target="_blank"
     class="app-article flex flex-col flex-1 items-center self-center md:mx-8 my-8 md:my-6"
   >
-    <div class="articleImage w-full">
+    <div class="articleImage w-full mb-4">
       <img :src="this.$withBase(`${image}`)" />
     </div>
     <div>
-      <div class="flex flex-row justify-between">
-        <p>{{formattedDate}}</p>
-        <p>{{ source }}</p>
+      <div class="flex flex-row items-center justify-between my-2">
+        <span
+          class="category p-2 bg-black text-white inline-block"
+          v-if="categories[category]"
+        >{{categories[category]}}</span>
+        <div class="text-right">
+          <p>{{formattedDate}}</p>
+          <p>{{ source }}</p>
+        </div>
       </div>
       <h2 class="font-serif font-extrabold text-xl center my-4" v-if="title" v-html="title"></h2>
-      <p class="text-base" v-html="description"></p>
+      <p class="text-lg md:text-base" v-html="description"></p>
     </div>
   </a>
 </template>
@@ -21,6 +27,11 @@
 <script>
 export default {
   name: "AppPortfolioItem",
+  data() {
+    return {
+      categories: { audio: "Audio", video: "Video", article: "Written" },
+    };
+  },
   props: {
     title: String,
     description: String,

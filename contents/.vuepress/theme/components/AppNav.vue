@@ -1,14 +1,14 @@
 <template>
   <header class="bg-white">
     <nav
-      class="font-serif text-center flex justify-between py-4 px-3 mx-auto container overflow-hidden"
+      class="font-serif text-center flex flex-col justify-between py-4 px-3 mx-auto container overflow-hidden"
     >
       <router-link
         :to="`/`"
-        class="block text-xl text-left self-center no-underline"
+        class="block font-semibold text-2xl text-left self-center no-underline"
         v-html="$site.title"
       ></router-link>
-      <ul class="text-sm list-reset flex items-center">
+      <ul class="list-reset self-center flex items-center">
         <li v-for="item in navItems">
           <a
             :href="item.link"
@@ -52,10 +52,10 @@ export default {
 
 <style scoped>
 .anchorLink {
-  border-bottom: 1px solid white;
+  border-bottom: 0.1rem solid white;
 }
 
 .anchorLink:hover {
-  border-bottom: 1px solid black;
+  border-bottom: 0.1rem solid black;
 }
 </style>
