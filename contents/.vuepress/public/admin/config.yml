@@ -5,11 +5,22 @@ backend:
 media_folder: "docs/.vuepress/public/images"
 public_folder: "docs/.vuepress/dist/"
 collections:
-  - name: "doc" # Used in routes, e.g., /admin/collections/blog
-    label: "Doc" # Used in the UI
-    folder: "docs" # The path to the folder where the documents are stored
+  - name: "portfolio" # Used in routes, e.g., /admin/collections/blog
+    label: "Portfolio" # Used in the UI
+    folder: "_posts/portfolio" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
     slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
     fields: # The fields for each document, usually in front matter
+      - { label: "Category", name: "category", widget: "string" }
       - { label: "Title", name: "title", widget: "string" }
-      - { label: "Body", name: "body", widget: "markdown" }
+      - { label: "Description", name: "description", widget: "string" }
+      - { label: "Link", name: "link", widget: "string" }
+      - { label: "Publish Date", name: "date", widget: "datetime" }
+      - { label: "Source", name: "source", widget: "string" }
+      - { label: "Featured Image", name: "thumbnail", widget: "image" }
+      - {
+          label: "Category",
+          name: "category",
+          widget: "select",
+          options: ["audio", "video", "article"],
+        }
