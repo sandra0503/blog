@@ -12,13 +12,14 @@
         <span
           class="category p-2 bg-black text-white inline-block"
           v-if="categories[category]"
-        >{{categories[category]}}</span>
+          >{{ categories[category] }}</span
+        >
         <div class="text-right">
           <p>{{ source }}</p>
-          <p>{{formattedDate}}</p>
+          <p>{{ formattedDate }}</p>
         </div>
       </div>
-      <h2 class="font-serif font-extrabold text-xl center my-4" v-if="title" v-html="title"></h2>
+      <h2 class="center my-4" v-if="title" v-html="title"></h2>
       <p class="text-lg md:text-base" v-html="description"></p>
     </div>
   </a>
@@ -44,7 +45,7 @@ export default {
   },
   computed: {
     formattedDate() {
-      return new Date(this.date).toLocaleString("de-DE", {
+      return new Date(this.date).toLocaleDateString("de-DE", {
         dateStyle: "medium",
       });
     },
