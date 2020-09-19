@@ -14,8 +14,8 @@
           v-if="categories[category]"
         >{{categories[category]}}</span>
         <div class="text-right">
-          <p>{{formattedDate}}</p>
           <p>{{ source }}</p>
+          <p>{{formattedDate}}</p>
         </div>
       </div>
       <h2 class="font-serif font-extrabold text-xl center my-4" v-if="title" v-html="title"></h2>
