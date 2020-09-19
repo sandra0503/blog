@@ -19,13 +19,13 @@
         </div>
       </div>
     </div>
-    <div class="w-full" :v-if="blogItems.length > 0">
+    <div class="w-full" v-if="blogItems.length > 0">
       <div class="container relative mx-auto px-6 pt-6">
         <h1 class="font-headline md:text-center">Blog</h1>
         <div class="flex flex-col flex-wrap lg:flex-row">
           <div v-for="item in blogItems" class="lg:w-1/3">
-            <router-link
-              :to="item.path"
+            <a
+              :href="item.path"
               class="app-article flex flex-col flex-1 items-center self-center md:mx-8 my-8 md:my-6"
             >
               <AppPortfolioItem
@@ -39,20 +39,19 @@
                 :imageSource="item.frontmatter.imageSource"
                 :imageAlt="item.frontmatter.imageAlt"
               ></AppPortfolioItem>
-            </router-link>
+            </a>
           </div>
         </div>
       </div>
     </div>
-    <div class="w-full" id="skills" :v-if="portfolio.length > 0">
+    <div class="w-full" id="skills" v-if="portfolio.length > 0">
       <div class="container relative mx-auto px-6 pt-6">
         <h1 class="font-headline md:text-center">
           {{ data.experience.headline }}
         </h1>
         <div class="flex flex-col flex-wrap lg:flex-row">
           <div v-for="item in portfolio" class="lg:w-1/3">
-            <router-link
-              to
+            <a
               :href="item.frontmatter.link"
               target="_blank"
               class="app-article flex flex-col flex-1 items-center self-center md:mx-8 my-8 md:my-6"
@@ -67,7 +66,7 @@
                 :imageSource="item.frontmatter.imageSource"
                 :imageAlt="item.frontmatter.imageAlt"
               ></AppPortfolioItem>
-            </router-link>
+            </a>
           </div>
         </div>
       </div>

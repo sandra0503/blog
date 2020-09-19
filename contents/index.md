@@ -13,5 +13,4 @@ contact:
 experience:
   headline: Portfolio
 footer: © 2020 Sabina Zollner
-title: Sabina Zollner
 ---
