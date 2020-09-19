@@ -1,7 +1,7 @@
 module.exports = {
   theme: {
     fontFamily: {
-      serif: ["Arapey", "serif"],
+      serif: ["Cormorant", "serif"],
     },
     colors: {
       black: "#000",

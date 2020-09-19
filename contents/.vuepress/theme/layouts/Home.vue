@@ -1,24 +1,24 @@
 <template>
   <main class="p-container font-serif text-black">
     <AppNav />
-    <div v-if="data.about" id="about" class="bg-white w-full">
+    <div v-if="data.about" class="bg-white w-full">
       <div class="container flex flex-col md:flex-row mx-auto px-6 py-10 md:py-16">
         <div class="flex flex-1">
           <div class="self-center w-56 md:w-64 py-2 mx-auto">
             <img :src="$withBase(aboutMe.frontmatter.image)" :alt="data.about.image.alt" />
           </div>
         </div>
-        <div class="flex-1 mt-3 md:mt-0">
+        <div class="flex-1 mt-3 md:mt-0" id="about">
           <h1 class="font-headline text-4xl">{{ data.about.headline }}</h1>
           <p class="mt-4" v-html="aboutMe.frontmatter.description"></p>
         </div>
       </div>
     </div>
     <div class="w-full" id="skills">
-      <div class="container relative mx-auto px-6 py-10">
-        <h1 class="font-headline text-center text-4xl mb-4">{{ data.experience.headline }}</h1>
-        <div class="flex flex-col lg:flex-row">
-          <template v-for="item in portfolio">
+      <div class="container relative mx-auto px-6 pt-6">
+        <h1 class="font-headline md:text-center text-4xl">{{ data.experience.headline }}</h1>
+        <div class="flex flex-col flex-wrap lg:flex-row">
+          <div v-for="item in portfolio" class="md:w-1/3">
             <AppPortfolioItem
               :title="item.frontmatter.title"
               :description="item.frontmatter.description"
@@ -28,12 +28,12 @@
               :link="item.frontmatter.link"
               :image="item.frontmatter.thumbnail"
             ></AppPortfolioItem>
-          </template>
+          </div>
         </div>
       </div>
     </div>
     <div id="contact" class="bg-white w-full">
-      <div class="container relative mx-auto px-6 md:w-1/2 py-10">
+      <div class="container relative mx-auto px-6 md:w-1/3 py-10">
         <h1 class="font-headline text-4xl">{{ data.contact.headline }}</h1>
         <p class="mt-4 mb-12 mx-auto" v-html="data.contact.text"></p>
         <ContactForm class="md:mb-12" />

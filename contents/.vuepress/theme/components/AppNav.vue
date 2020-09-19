@@ -13,7 +13,7 @@
           <a
             :href="item.link"
             ref="anchorLink"
-            class="anchorLink cursor-pointer inline-block py-1 mt-1 ml-3 p-2 no-underline transition-fast border-b-2 border-white hover:border-black"
+            class="anchorLink cursor-pointer inline-block py-1 mt-1 ml-3 p-2 no-underline transition-fast"
             v-on:click="scrollToTarget"
           >{{item.text}}</a>
         </li>
@@ -49,3 +49,13 @@ export default {
   },
 };
 </script>
+
+<style scoped>
+.anchorLink {
+  border-bottom: 1px solid white;
+}
+
+.anchorLink:hover {
+  border-bottom: 1px solid black;
+}
+</style>

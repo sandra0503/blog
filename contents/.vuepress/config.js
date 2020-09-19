@@ -13,6 +13,10 @@ module.exports = {
             link: "#about",
           },
           {
+            text: "Arbeiten",
+            link: "#skills",
+          },
+          {
             text: "Kontakt",
             link: "#contact",
           },

@@ -12,7 +12,7 @@ contact:
   messageLabel: "Nachricht:"
   buttonLabel: "Senden"
 experience:
-  headline: Veröffentlichte Artikel
+  headline: Veröffentlichte Arbeiten
 footer: © 2020 Sabina Zollner
 title: Sabina Zollner
 ---
