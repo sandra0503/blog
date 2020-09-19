@@ -7,7 +7,7 @@
     <div class="articleImage w-full mb-4">
       <img :src="this.$withBase(`${image}`)" />
     </div>
-    <div>
+    <div class="w-full">
       <div class="flex flex-row items-center justify-between my-2">
         <span
           class="category p-2 bg-black text-white inline-block"
