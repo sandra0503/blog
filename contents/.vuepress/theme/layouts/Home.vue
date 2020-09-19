@@ -1,11 +1,16 @@
 <template>
-  <main class="p-container font-serif text-black">
+  <main class="p-container text-black">
     <AppNav class="mt-8" />
     <div v-if="data.about" class="bg-white w-full">
-      <div class="container flex flex-col md:flex-row mx-auto pt-2 md:pt-6 px-6 py-10 md:py-16">
+      <div
+        class="container flex flex-col md:mt-8 md:flex-row mx-auto pt-2 md:pt-6 px-6 py-10 md:py-16"
+      >
         <div class="flex flex-1">
           <div class="self-center w-56 md:w-64 py-2 mx-auto">
-            <img :src="$withBase(aboutMe.frontmatter.image)" :alt="data.about.image.alt" />
+            <img
+              :src="$withBase(aboutMe.frontmatter.image)"
+              :alt="data.about.image.alt"
+            />
           </div>
         </div>
         <div class="flex-1 mt-3 md:mt-0" id="about">
@@ -16,7 +21,9 @@
     </div>
     <div class="w-full" id="skills">
       <div class="container relative mx-auto px-6 pt-6">
-        <h1 class="font-headline md:text-center">{{ data.experience.headline }}</h1>
+        <h1 class="font-headline md:text-center">
+          {{ data.experience.headline }}
+        </h1>
         <div class="flex flex-col flex-wrap lg:flex-row">
           <div v-for="item in portfolio" class="lg:w-1/3">
             <AppPortfolioItem
@@ -32,9 +39,14 @@
         </div>
       </div>
     </div>
-    <div id="contact" class="container mx-auto relative px-6 py-10 bg-white w-full md:mt-8">
-      <div class="md:w-1/3 md:px-8 mx-auto">
-        <h1 class="font-headline md:text-center">{{ data.contact.headline }}</h1>
+    <div
+      id="contact"
+      class="container mx-auto relative px-6 py-10 bg-white w-full md:mt-8"
+    >
+      <div class="lg:w-1/3 md:px-8 mx-auto">
+        <h1 class="font-headline md:text-center">
+          {{ data.contact.headline }}
+        </h1>
         <p class="mt-4 mb-12 mx-auto" v-html="data.contact.text"></p>
         <ContactForm class="md:mb-12" />
       </div>
@@ -79,6 +91,6 @@ export default {
 };
 </script>
 
-<style lang='stylus'>
+<style lang="stylus">
 @import '../styles/theme.styl';
 </style>

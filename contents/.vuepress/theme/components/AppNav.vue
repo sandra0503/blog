@@ -1,13 +1,13 @@
 <template>
   <header class="bg-white">
     <nav
-      class="font-serif text-center flex flex-col justify-between py-4 px-3 mx-auto container overflow-hidden"
+      class="font-sans text-center flex flex-col justify-between py-4 px-3 mx-auto container overflow-hidden"
     >
       <router-link
         :to="`/`"
-        class="block font-semibold text-2xl text-left self-center no-underline"
-        v-html="$site.title"
-      ></router-link>
+        class="font-serif block font-semibold text-2xl text-left self-center no-underline"
+        ><h1>{{ $site.title }}</h1></router-link
+      >
       <ul class="list-reset self-center flex items-center">
         <li v-for="item in navItems">
           <a
@@ -15,7 +15,8 @@
             ref="anchorLink"
             class="anchorLink cursor-pointer inline-block py-1 mt-1 ml-3 p-2 no-underline transition-fast"
             v-on:click="scrollToTarget"
-          >{{item.text}}</a>
+            >{{ item.text }}</a
+          >
         </li>
       </ul>
     </nav>

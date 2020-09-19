@@ -1,20 +1,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Cormorant:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
 @tailwind base;
 @tailwind components;
 
 @css {
   body, html, #app {
-    @apply .text-lg;
+    @apply .text-base .font-sans;
     height: 100%;
   }
 
   h1 {
-    @apply .text-3xl .font-semibold;
+    @apply .text-3xl .font-serif .font-semibold;
+  }
+
+  h2 {
+    @apply .text-2xl .font-serif .font-extrabold;
   }
 
   .btn {
-    @apply .lowercase .p-2 .m-2;
+    @apply .lowercase .p-2 .m-2 .font-serif;
     transition: background, color .5s;
   }
 
@@ -46,12 +51,17 @@
 
   @media (min-width: 768px) {
     body, html, #app {
-      @apply .text-base;
+      @apply .text-base  .font-sans;
     }
 
     h1 {
       @apply .text-4xl;
     }
+
+    h2 {
+      @apply .text-2xl;
+    }
+
 
     .btn:hover {
       @apply .bg-black .text-white;

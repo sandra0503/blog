@@ -2,6 +2,7 @@ module.exports = {
   theme: {
     fontFamily: {
       serif: ["Cormorant", "serif"],
+      sans: ["Montserrat", "sans-serif"],
     },
     colors: {
       black: "#000",
