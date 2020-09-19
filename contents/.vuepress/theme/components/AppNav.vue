@@ -6,17 +6,17 @@
       <router-link
         :to="`/`"
         class="font-serif block font-semibold text-2xl text-left self-center no-underline"
-        ><h1>{{ $site.title }}</h1></router-link
       >
-      <ul class="list-reset self-center flex items-center">
-        <li v-for="item in navItems">
+        <h1>{{ $site.title }}</h1>
+      </router-link>
+      <ul class="list-reset mt-2 w-4/5 md:w-1/2 lg:w-1/4 self-center flex items-center">
+        <li v-for="item in navItems" class="w-1/3">
           <a
             :href="item.link"
             ref="anchorLink"
-            class="anchorLink cursor-pointer inline-block py-1 mt-1 ml-3 p-2 no-underline transition-fast"
+            class="anchorLink cursor-pointer py-1 mt-1 no-underline transition-fast"
             v-on:click="scrollToTarget"
-            >{{ item.text }}</a
-          >
+          >{{ item.text }}</a>
         </li>
       </ul>
     </nav>

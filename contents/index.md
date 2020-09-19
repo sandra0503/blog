@@ -11,7 +11,7 @@ contact:
   messageLabel: "Nachricht:"
   buttonLabel: "Senden"
 experience:
-  headline: Veröffentlichte Arbeiten
+  headline: Portfolio
 footer: © 2020 Sabina Zollner
 title: Sabina Zollner
 ---

@@ -12,15 +12,14 @@
         <span
           class="category p-2 bg-black text-white inline-block"
           v-if="categories[category]"
-          >{{ categories[category] }}</span
-        >
+        >{{ categories[category] }}</span>
         <div class="text-right">
           <p>{{ source }}</p>
           <p>{{ formattedDate }}</p>
         </div>
       </div>
       <h2 class="center my-4" v-if="title" v-html="title"></h2>
-      <p class="text-lg md:text-base" v-html="description"></p>
+      <p v-html="description"></p>
     </div>
   </a>
 </template>
@@ -30,7 +29,7 @@ export default {
   name: "AppPortfolioItem",
   data() {
     return {
-      categories: { audio: "Audio", video: "Video", article: "Written" },
+      categories: { audio: "Audio", video: "Video", article: "Print" },
     };
   },
   props: {
