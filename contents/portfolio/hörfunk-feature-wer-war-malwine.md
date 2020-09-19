@@ -7,7 +7,7 @@ description: >-
   allmählich tauchte sie in das Leben der ihr fremden Frau ein.
 link: >-
   https://www.rbb-online.de/rbbkultur/themen/leben/beitraege/2020/03/woche-der-bruederlichkeit/wer-war-malwine.html
-date: '2020-09-19T12:56:40+02:00'
+date: '2020-03-12T12:56:40+01:00'
 source: Rbb-online
 thumbnail: /images/malwine.jpg
 category: audio
