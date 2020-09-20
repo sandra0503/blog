@@ -7,7 +7,7 @@
         to="/"
         class="font-serif block font-semibold text-2xl text-left self-center no-underline"
       >
-        <h1>{{ $site.title }}</h1>
+        <h2>{{ $site.title }}</h2>
       </router-link>
       <ul
         class="list-reset mt-2 w-4/5 md:w-1/2 lg:w-1/4 self-center flex items-center"
@@ -19,8 +19,7 @@
             ref="anchorLink"
             class="anchorLink cursor-pointer py-4 md:py-1 mt-1 no-underline transition-fast"
             v-on:click="scrollToTarget"
-            >{{ item.text }}</a
-          >
+          >{{ item.text }}</a>
         </li>
       </ul>
     </nav>

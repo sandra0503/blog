@@ -84,6 +84,12 @@ collections:
           required: false,
         }
       - {
+          label: "Image alt (important for screen readers)",
+          name: "imageAlt",
+          widget: "string",
+          required: false,
+        }
+      - {
           label: "Category",
           name: "category",
           widget: "select",

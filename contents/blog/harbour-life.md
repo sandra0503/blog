@@ -1,13 +1,12 @@
 ---
 title: New Story
-description: Description of the new story
+description: Description of the new story. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
 date: "2020-10-01T18:55:49+02:00"
 source: ""
 thumbnail: /images/harbourVideoScreenshot.jpg
+imageAlt: Hafen mit Leuchtturm und Fischern
 imageSource: xxx
 ---
-
-# New Story
 
 ## Second headline
 
