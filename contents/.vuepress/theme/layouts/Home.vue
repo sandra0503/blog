@@ -79,7 +79,7 @@
         <h1 class="font-headline md:text-center">
           {{ data.contact.headline }}
         </h1>
-        <p class="mt-4 mb-12 mx-auto" v-html="data.contact.text"></p>
+        <p class="mt-4 mb-12 mx-auto">{{ data.contact.text }}</p>
         <ContactForm class="md:mb-12" />
       </div>
     </div>
