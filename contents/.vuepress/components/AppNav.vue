@@ -17,7 +17,7 @@
           <a
             :href="item.link"
             ref="anchorLink"
-            class="anchorLink cursor-pointer py-1 mt-1 no-underline transition-fast"
+            class="anchorLink cursor-pointer py-4 md:py-1 mt-1 no-underline transition-fast"
             v-on:click="scrollToTarget"
             >{{ item.text }}</a
           >
@@ -50,20 +50,17 @@ export default {
       }
     },
   },
-  beforeDestroyed() {
-    this.anchorLinks.forEach((link) => {
-      link.removeEventListener("click", this.scrollToTarget);
-    });
-  },
 };
 </script>
 
 <style scoped>
-.anchorLink {
-  border-bottom: 0.1rem solid white;
-}
+@media (min-width: 768px) {
+  .anchorLink {
+    border-bottom: 0.1rem solid white;
+  }
 
-.anchorLink:hover {
-  border-bottom: 0.1rem solid black;
+  .anchorLink:hover {
+    border-bottom: 0.1rem solid black;
+  }
 }
 </style>

@@ -3,7 +3,7 @@
     <div class="articleImage relative w-full mb-4">
       <img :src="this.$withBase(`${image}`)" :alt="imageAlt" />
       <span
-        class="absolute px-1 bottom-0 left-0 text-white text-tiny bg-black bg-opacity-25"
+        class="absolute px-1 bottom-0 left-0 text-white text-sm md:text-tiny bg-black bg-opacity-25"
         >{{ imageSource }}</span
       >
     </div>

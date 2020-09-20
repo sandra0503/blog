@@ -39,5 +39,9 @@ module.exports = {
           "https://unpkg.com/smoothscroll-polyfill@0.4.3/dist/smoothscroll.min.js",
       },
     ],
+    [
+      "meta",
+      { name: "viewport", content: "width=device-width, initial-scale=1" },
+    ],
   ],
 };
