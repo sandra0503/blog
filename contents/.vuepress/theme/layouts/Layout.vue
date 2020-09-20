@@ -2,13 +2,15 @@
   <main class="p-container text-black">
     <AppNav />
     <div class="postLayout container mx-auto md:px-64 flex flex-col h-full">
-      <div class="mb-4 text-right">
-        {{ new Date(this.$page.frontmatter.date).toLocaleDateString("de-DE", {
-        dateStyle: "medium",
-        }) }}
+      <div class="px-6 md:px-0">
+        <div class="mb-4 text-right">
+          {{ new Date(this.$page.frontmatter.date).toLocaleDateString("de-DE", {
+          dateStyle: "medium",
+          }) }}
+        </div>
+        <h1>{{ this.$page.title }}</h1>
+        <p>{{ this.$page.frontmatter.description }}</p>
       </div>
-      <h1>{{ this.$page.title }}</h1>
-      <p>{{ this.$page.frontmatter.description }}</p>
       <div class="articleImage w-full mb-4">
         <img :src="this.$withBase(`${this.$page.frontmatter.thumbnail}`)" />
       </div>

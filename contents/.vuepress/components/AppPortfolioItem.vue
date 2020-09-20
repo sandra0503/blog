@@ -8,7 +8,10 @@
       >
     </div>
     <div class="w-full">
-      <div class="flex flex-row items-center justify-between my-2">
+      <div
+        v-if="categories[category] || source"
+        class="flex flex-row items-center justify-between my-2"
+      >
         <span
           class="category p-2 bg-black text-white inline-block"
           v-if="categories[category]"
@@ -16,7 +19,6 @@
         >
         <div class="text-right">
           <p>{{ source }}</p>
-          <p>{{ formattedDate }}</p>
         </div>
       </div>
       <h2 class="center my-4" v-if="title" v-html="title"></h2>
@@ -42,13 +44,6 @@ export default {
     image: String,
     imageSource: String,
     imageAlt: String,
-  },
-  computed: {
-    formattedDate() {
-      return new Date(this.date).toLocaleDateString("de-DE", {
-        dateStyle: "medium",
-      });
-    },
   },
 };
 </script>
