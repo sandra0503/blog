@@ -46,7 +46,6 @@ collections:
           options: ["audio", "video", "article"],
           required: false,
         }
-      - { label: "Body", name: "body", widget: "markdown" }
   - name: "aboutme" # Used in routes, e.g., /admin/collections/blog
     label: "About me" # Used in the UI
     folder: "contents/about" # The path to the folder where the documents are stored
