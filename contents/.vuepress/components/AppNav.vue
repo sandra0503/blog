@@ -10,7 +10,7 @@
         <h2>{{ $site.title }}</h2>
       </router-link>
       <ul
-        class="list-reset mt-2 w-4/5 md:w-1/2 lg:w-1/4 self-center flex items-center"
+        class="list-reset mt-2 w-4/5 md:w-1/2 xl:w-1/4 self-center flex items-center"
         v-if="showNavItems"
       >
         <li v-for="item in navItems" class="w-1/3">
