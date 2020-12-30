@@ -6,7 +6,7 @@ link: >-
 date: '2019-04-01T18:53:28+02:00'
 source: Süddeutsche.de
 thumbnail: /images/sueddeutschede-04012019.jpg
-imageSource: '(Foto: Georgine Treybal)'
+imageSource: 'Foto: Georgine Treybal'
 imageAlt: Bild von Elisabeth Carr
 category: article
 ---

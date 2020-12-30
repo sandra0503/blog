@@ -1,5 +1,6 @@
 ---
 headline: Über mich
-description: Freie Journalistin und Studentin Kulturjournalismus in Berlin
-image: /images/sabina.jpg
+description: Freie Journalistin und Kulturjournalismusstudentin in Berlin
+image: /images/bild.jpg
 ---
+

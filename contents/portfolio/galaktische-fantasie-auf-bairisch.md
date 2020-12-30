@@ -8,7 +8,7 @@ link: >-
 date: '2019-02-24T18:52:11+01:00'
 source: Süddeutsche.de
 thumbnail: /images/sueddeutschede-02242019.jpg
-imageSource: '(Foto: Franz Xaver Fuchs)'
+imageSource: 'Foto: Franz Xaver Fuchs'
 imageAlt: Musiker mit Blasinstrumenten
 category: article
 ---
