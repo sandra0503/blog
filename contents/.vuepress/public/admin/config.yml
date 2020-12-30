@@ -53,6 +53,7 @@ collections:
     slug: "about" # Filename template, e.g., YYYY-MM-DD-title.md
     identifier_field: description
     fields: # The fields for each document, usually in front matter
+      - { label: "Label", name: "label", widget: "string" }
       - { label: "Headline", name: "headline", widget: "string" }
       - { label: "Description", name: "description", widget: "markdown" }
       - { label: "Image", name: "image", widget: "image", required: false }

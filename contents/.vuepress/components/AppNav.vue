@@ -5,9 +5,10 @@
     >
       <router-link
         to="/"
-        class="font-serif block text-left self-center no-underline"
+        class="block text-center self-center no-underline"
       >
-        <h2 class="text-4xl">{{ $site.title }}</h2>
+        <h2 class="font-serif text-4xl">{{ $site.title }}</h2>
+        <p class="text-lg">{{ aboutMe.frontmatter.label }}</p>
       </router-link>
       <ul
         class="list-reset mt-2 w-4/5 md:w-1/2 xl:w-1/4 self-center flex items-center"
@@ -36,6 +37,13 @@ export default {
     navItems() {
       const base = this.$site.base;
       return this.$site.themeConfig.locales[base].nav;
+    },
+
+    aboutMe() {
+      return this.$site.pages.find(
+        (page) =>
+          page.path.startsWith("/about/") && !page.frontmatter.blog_index
+      );
     },
   },
   methods: {

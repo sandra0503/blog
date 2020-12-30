@@ -1,6 +1,6 @@
 <template>
   <main class="p-container text-black">
-    <AppNav class="mt-8" showNavItems />
+    <AppNav class="mt-8" />
     <div v-if="data.about" class="bg-white w-full">
       <div
         class="container flex flex-col md:mt-8 md:flex-row mx-auto pt-4 md:pt-6 px-6 py-10 md:py-16"
@@ -11,7 +11,7 @@
           </div>
         </div>
         <div class="flex-1 mt-3 md:mt-0" id="about">
-          <h2 class="font-headline tracking-wider">{{ aboutMe.frontmatter.headline }}</h2>
+          <h1 class="font-headline tracking-wider">{{ aboutMe.frontmatter.headline }}</h1>
           <p class="mt-4 whitespace-pre-wrap" v-html="aboutMe.frontmatter.description"></p>
         </div>
       </div>
