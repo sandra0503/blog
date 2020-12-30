@@ -20,7 +20,7 @@
     <div class="w-full">
       <h2 class="center my-4" v-if="title" v-html="title"></h2>
       <p v-html="description"></p>
-      <p class="text-xs mt-2" v-if="source">Quelle: {{ source }}</p>
+      <p class="text-sm mt-2" v-if="source">Quelle: {{ source }}</p>
     </div>
   </div>
 </template>

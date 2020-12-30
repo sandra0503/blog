@@ -12,7 +12,7 @@
         </div>
         <div class="flex-1 mt-3 md:mt-0" id="about">
           <h2 class="font-headline tracking-wider">{{ aboutMe.frontmatter.headline }}</h2>
-          <p class="mt-4" v-html="aboutMe.frontmatter.description"></p>
+          <p class="mt-4 whitespace-pre-wrap" v-html="aboutMe.frontmatter.description"></p>
         </div>
       </div>
     </div>
