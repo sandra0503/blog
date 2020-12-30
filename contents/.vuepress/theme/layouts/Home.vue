@@ -6,12 +6,12 @@
         class="container flex flex-col md:mt-8 md:flex-row mx-auto pt-4 md:pt-6 px-6 py-10 md:py-16"
       >
         <div class="flex flex-1">
-          <div class="self-center w-56 md:w-64 py-2 mx-auto">
+          <div class="self-center w-auto md:px-16 mx-auto mb-2 md:mb-0">
             <img :src="$withBase(aboutMe.frontmatter.image)" :alt="data.about.image.alt" />
           </div>
         </div>
         <div class="flex-1 mt-3 md:mt-0" id="about">
-          <h1 class="font-headline">{{ aboutMe.frontmatter.headline }}</h1>
+          <h2 class="font-headline tracking-wider">{{ aboutMe.frontmatter.headline }}</h2>
           <p class="mt-4" v-html="aboutMe.frontmatter.description"></p>
         </div>
       </div>

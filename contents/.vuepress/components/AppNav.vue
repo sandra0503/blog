@@ -5,9 +5,9 @@
     >
       <router-link
         to="/"
-        class="font-serif block font-semibold text-2xl text-left self-center no-underline"
+        class="font-serif block text-left self-center no-underline"
       >
-        <h2>{{ $site.title }}</h2>
+        <h2 class="text-4xl">{{ $site.title }}</h2>
       </router-link>
       <ul
         class="list-reset mt-2 w-4/5 md:w-1/2 xl:w-1/4 self-center flex items-center"

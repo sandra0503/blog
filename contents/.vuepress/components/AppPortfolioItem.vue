@@ -1,5 +1,15 @@
 <template>
   <div>
+    <div
+      v-if="categories[category]"
+      class="flex flex-row items-center justify-between -mb-6 z-100"
+    >
+      <span
+        class="category p-4 text-sm bg-black text-white inline-block"
+        v-if="categories[category]"
+        >{{ categories[category] }}</span
+      >
+    </div>
     <div class="articleImage relative w-full mb-4">
       <img :src="this.$withBase(`${image}`)" :alt="imageAlt" />
       <span
@@ -8,21 +18,9 @@
       >
     </div>
     <div class="w-full">
-      <div
-        v-if="categories[category] || source"
-        class="flex flex-row items-center justify-between my-2"
-      >
-        <span
-          class="category p-2 bg-black text-white inline-block"
-          v-if="categories[category]"
-          >{{ categories[category] }}</span
-        >
-        <div class="text-right">
-          <p>{{ source }}</p>
-        </div>
-      </div>
       <h2 class="center my-4" v-if="title" v-html="title"></h2>
       <p v-html="description"></p>
+      <p class="text-xs mt-2" v-if="source">Quelle: {{ source }}</p>
     </div>
   </div>
 </template>
@@ -51,6 +49,10 @@ export default {
 <style scoped>
 .app-article {
   cursor: pointer;
+}
+
+.articleImage {
+  z-index: -1;
 }
 
 .articleImage img {

@@ -9,7 +9,7 @@ module.exports = {
         label: "Deutsch",
         nav: [
           {
-            text: "Über mich",
+            text: "About",
             link: "#about",
           },
           {
