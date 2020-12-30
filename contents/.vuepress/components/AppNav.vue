@@ -7,7 +7,7 @@
         to="/"
         class="block text-center self-center no-underline"
       >
-        <h2 class="font-serif text-4xl">{{ $site.title }}</h2>
+        <h2 class="font-serif text-4xl mb-2">{{ $site.title }}</h2>
         <p class="text-base">{{ aboutMe.frontmatter.label }}</p>
       </router-link>
       <ul
