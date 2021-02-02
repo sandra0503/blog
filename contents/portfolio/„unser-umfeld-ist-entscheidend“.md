@@ -9,5 +9,6 @@ date: '2021-02-02T11:49:03+01:00'
 source: taz am Wochenende
 thumbnail: /images/26668392-1.jpeg
 imageSource: 'Foto: Ute Grabowsky'
+category: article
 ---
 
