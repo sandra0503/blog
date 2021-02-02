@@ -1,6 +1,6 @@
 <template>
   <footer class="font-serif text-center pt-8 pb-4 px-4">
-    <div class="mt-4 mb-2">{{ data.footer }}</div>
+    <div class="mt-4 mb-2">© 2021 Sabina Zollner</div>
     <router-link
       :to="impressumPage.path"
       class="text-sm mb-4 link no-underline"

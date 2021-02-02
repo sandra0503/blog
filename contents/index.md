@@ -12,5 +12,4 @@ contact:
   buttonLabel: "Senden"
 experience:
   headline: Portfolio
-footer: © 2020 Sabina Zollner
 ---

@@ -1,7 +1,7 @@
 <template>
   <main class="p-container text-black">
-    <AppNav />
-    <div class="postLayout container mx-auto md:px-64 flex flex-col h-full">
+    <AppNav class="mt-8"/>
+    <div class="postLayout container mx-auto md:px-64 flex flex-col h-full pt-4 md:mt-8">
       <div class="px-6 md:px-0">
         <div class="mb-4 text-right" v-if="this.$page.frontmatter.date">
           {{ new Date(this.$page.frontmatter.date).toLocaleDateString("de-DE", {
