@@ -101,8 +101,8 @@ collections:
   - name: "impressum"
     label: "Impressum" # Used in the UI
     folder: "contents/" # The path to the folder where the documents are stored
-    create: true # Allow users to create new documents in this collection
-    slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
+    create: false # Allow users to create new documents in this collection
+    slug: "index.md" # Filename template, e.g., YYYY-MM-DD-title.md
     fields: # The fields for each document, usually in front matter
       - { label: "Layout", name: "layout", widget: "string", default: "Layout"}
       - { label: "Title", name: "title", widget: "string" }
