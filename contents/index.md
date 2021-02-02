@@ -1,5 +1,5 @@
 ---
-layout: Home
+layout: Impressum
 about:
   image:
     alt: Bild von Sabina Zollner
