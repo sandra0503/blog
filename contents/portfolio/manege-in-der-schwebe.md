@@ -10,5 +10,6 @@ date: '2021-02-02T11:52:36+01:00'
 source: DLF Kultur
 thumbnail: /images/img_9186.jpg
 imageSource: 'Foto: Sabina Zollner'
+category: audio
 ---
 
