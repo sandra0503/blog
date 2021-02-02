@@ -8,5 +8,6 @@ date: '2021-02-02T11:51:23+01:00'
 source: taz am Wochenende
 thumbnail: /images/26669702-1.jpeg
 imageSource: 'Foto: Gary Waters'
+category: article
 ---
 
