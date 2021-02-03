@@ -8,6 +8,7 @@ date: '2020-11-29T17:20:46+01:00'
 source: 'taz '
 thumbnail: /images/26372887-1.jpeg
 imageSource: 'Foto: imago stock&people'
+imageAlt: Tatort Auge
 category: article
 ---
 
