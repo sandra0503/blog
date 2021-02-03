@@ -9,7 +9,7 @@ date: '2021-02-02T11:49:03+01:00'
 source: taz am Wochenende
 thumbnail: /images/26668392-1.jpeg
 imageSource: 'Foto: Ute Grabowsky'
-imageAlt: Vater mit zwei Babies auf dem Arm
+imageAlt: Mann mit zwei Babies auf dem Arm
 category: article
 ---
 
