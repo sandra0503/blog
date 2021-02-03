@@ -9,6 +9,7 @@ date: '2020-12-30T17:28:30+01:00'
 source: taz am Wochenende
 thumbnail: /images/hafenbild.jpg
 imageSource: 'Foto: Dagmar Schwelle'
+imageAlt: Hafen
 category: article
 ---
 
