@@ -11,6 +11,6 @@ description: >-
   Geschichten erzählen, die das Leben ein wenig erträglicher machen. Meine
   Leidenschaft liegt im Film und Reportagen, die im Kleinen das ganz Große
   erzählen.
-image: /images/bild.jpg
+image: /images/profilfotosabina.jpg
 ---
 
