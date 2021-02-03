@@ -12,6 +12,7 @@ source: DLF Kultur
 thumbnail: >-
   /images/6680ef0cfe57317e64e2f26255cc82ecv1_max_635x357_b3535db83dc50e27c1bb1392364c95a2.jpg
 imageSource: 'Foto: Gettyimages / woojpn'
+imageAlt: Illustration Therapiegruppe
 category: audio
 ---
 
