@@ -9,6 +9,7 @@ date: '2020-12-30T18:35:20+01:00'
 source: taz am Wochenende
 thumbnail: /images/thumbnail_img_5305.jpg
 imageSource: 'Foto: privat'
+imageAlt: Frau und Herr Schönberger
 category: article
 ---
 
