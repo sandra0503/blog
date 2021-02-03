@@ -12,6 +12,7 @@ date: '2020-10-27T17:15:27+01:00'
 source: 'DLF Kultur '
 thumbnail: /images/foto-naturwald.jpg
 imageSource: 'Foto: Sabina Zollner'
+imageAlt: Wald
 category: audio
 ---
 
