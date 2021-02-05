@@ -6,7 +6,7 @@ description: >-
   Deutschland 
 
 
-  Reportagen / Film  / Alltagskultur  / Literatur / Geschichte
+  Reportagen / Film  / Alltagskultur / Literatur / Geschichte
 
 
   Oktober 2019 - heute\
