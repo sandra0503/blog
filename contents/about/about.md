@@ -2,8 +2,8 @@
 label: Kulturjournalismusstudentin / Freie Journalistin in Berlin
 headline: Vita
 description: >-
-  Freie Journalistin in Berlin für DLF Kultur, taz, Praxis UdK und Neues
-  Deutschland 
+  Freie Journalistin für DLF Kultur, taz, Süddeutsche Zeitung, Neues Deutschland
+  und Praxis
 
 
   Reportagen / Film  / Alltagskultur / Literatur / Geschichte
