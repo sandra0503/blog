@@ -6,23 +6,15 @@ description: >-
   Deutschland 
 
 
-  **Themen**
+  Reportagen / Film  / Alltagskultur  / Literatur / Geschichte
 
 
-  Reportagen \* Film \* Alltagskultur \* Literatur \* Geschichte
-
-
-  **Vita**
-
-
-  Oktober 2019 - heute 
-
+  Oktober 2019 - heute \
 
   M.A. Kulturjournalismus an Universität der Künste Berlin
 
 
-  2015-2018 
-
+  2015-2018 \
 
   B.A. Liberal Arts & Sciences: Global Challenges an der Leiden Universität den
   Haag
