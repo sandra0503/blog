@@ -1,4 +1,2 @@
 node_modules
 contents/.vuepress/dist
-# Local Netlify folder
-.netlify
