@@ -7,7 +7,7 @@
       >
         <div class="flex flex-1">
           <div class="self-center w-auto md:px-16 mx-auto mb-2 md:mb-0">
-            <img :src="$withBase(aboutMe.frontmatter.image)" :alt="data.about.image.alt" />
+            <img :src="`${$withBase(aboutMe.frontmatter.image)}?nf_resize=smartcrop&w=1000`" :alt="data.about.image.alt" />
           </div>
         </div>
         <div class="flex-1 mt-3 md:mt-0" id="about">
