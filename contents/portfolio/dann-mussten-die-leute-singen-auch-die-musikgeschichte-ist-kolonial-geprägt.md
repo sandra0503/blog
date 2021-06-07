@@ -1,5 +1,5 @@
 ---
-title: 'Dann mussten die Leute singen: Auch die Musikgeschichte ist kolonial geprägt'
+title: Dann mussten die Leute singen
 description: >-
   Das Phonogramm-Archiv erzählt von Machtgefällen, die auch im heutigen
   Musikgeschäft noch spürbar sind
