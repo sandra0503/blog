@@ -1,5 +1,5 @@
 ---
-title: 'Science-Fiction-Dating-Serien: Gematcht, verliebt, verheiratet'
+title: 'Gematcht, verliebt, verheiratet'
 description: >-
   "Soulmates", "Osmosis", "The One": Was dahintersteckt, wenn jetzt gerade in
   vielen Serien Menschen durch moderne Technologien ihren Seelenverwandten suche
