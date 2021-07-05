@@ -1,5 +1,5 @@
 ---
-title: „People of Color sollten im Film nicht nur als Putzkräfte auftreten“
+title: Luft nach oben
 description: >-
   Mey Woelke und Naomi Rösick von dem feministischen Filmkollektiv Generation
   Tochter über den Automatismus der männlichen, weißen Perspektive im Film.
