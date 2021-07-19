@@ -9,7 +9,7 @@ link: >-
 date: '2021-07-10T09:50:20+02:00'
 source: Berliner Zeitung
 thumbnail: /images/41c43a70-2347-467b-8c60-312f283b5dce.jpeg
-imageSource: 'Fotoe: Suhrkamp'
+imageSource: 'Foto: Suhrkamp'
 category: article
 ---
 
