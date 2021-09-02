@@ -1,5 +1,5 @@
 ---
-title: Das Spiel um Aufmerksamkeit
+title: 'Digitaler Faschismus '
 description: >-
   Rechte versuchen im Netz gezielt Gefühle zu manipulieren.
   Medienwissenschaftler Simon Strick über die Gefahren des digitalen Faschismus
