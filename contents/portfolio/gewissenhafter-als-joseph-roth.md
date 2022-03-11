@@ -11,6 +11,6 @@ date: '2022-03-09T12:35:40+01:00'
 source: Deutschlandfunk Kultur
 thumbnail: /images/1920x1080.jpeg
 imageSource: imago/Everett Collection
-category: article
+category: audio
 ---
 
