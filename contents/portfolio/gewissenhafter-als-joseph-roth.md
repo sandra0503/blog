@@ -1,5 +1,5 @@
 ---
-title: Gewissenhafter als Joseph Roth
+title: Gewissenhafter als Joseph Roth und und Egon Erwin Kisch
 description: >-
   In der Weimarer Republik machte die emanzipatorische Entwicklung auch vor den
   zahlreichen Zeitungsredaktionen Berlins keinen Halt. Autorinnen wie Maria
