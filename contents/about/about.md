@@ -1,16 +1,16 @@
 ---
-label: Kulturjournalismusstudentin / Freie Journalistin in Berlin
+label: 'Freie Journalistin in Berlin / Redakteurin bei der taz '
 headline: Vita
 description: >-
-  Freie Journalistin und Autorin für DLF Kultur, taz, Süddeutsche Zeitung,
-  Berliner Zeitung, Neues Deutschland und Praxis
+  Redakteurin bei der taz und freie Journalistin und Autorin für DLF Kultur,
+  Süddeutsche Zeitung, Berliner Zeitung und Praxis
 
 
   Reportagen / Film  / Alltagskultur / Literatur / Geschichte
 
 
-  Oktober 2019 -
-  heute                                                                                                                                      
+  Oktober 2019 - Okobter
+  2021                                                                                                                                 
   M.A. Kulturjournalismus an Universität der Künste Berlin
 
 
