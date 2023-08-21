@@ -13,17 +13,17 @@ description: >-
   Zeitung und Praxis
 
 
-  Reportagen / Film  / Alltagskultur / Literatur / Geschichte
+  Reportagen / Soziale Gerechtigkeit  / Alltagskultur  / Geschichte
 
 
   Oktober 2019 - Okobter
-  2021                                                                                                                                 
+  2021                                                                                                                
   \
 
   M.A. Kulturjournalismus an Universität der Künste Berlin
 
 
-  2015-2018                                                                                                                                                         
+  2015-2018                                                                                                                                                        
   \
 
   B.A. Liberal Arts & Sciences: Global Challenges an der Leiden Universität den
