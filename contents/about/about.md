@@ -2,7 +2,7 @@
 label: 'Freie Journalistin in Berlin / Redakteurin bei der taz '
 headline: Vita
 description: >-
-  Redakteurin bei taz.eins 
+  Redakteurin bei taz.eins + nahaufnahme 
 
 
   Projektleiterin Lichtblick
