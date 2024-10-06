@@ -13,7 +13,8 @@ description: >-
   Zeitung und Praxis
 
 
-  Reportagen / Soziale Gerechtigkeit  / Feminismus  / Geschichte
+  Reportagen / Soziale Gerechtigkeit  / Feminismus  / Religion / Inklusion /
+  Geschichte
 
 
   Oktober 2019 - Okobter
