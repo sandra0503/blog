@@ -1,20 +1,26 @@
 ---
-label: 'Freie Journalistin in Berlin / Redakteurin bei der taz '
+label: Freie Journalistin in Berlin
 headline: Vita
 description: >-
-  Redakteurin bei taz.eins + nahaufnahme 
-
-
-  Projektleiterin Lichtblick
-  (https://taz.de/Knastzeitung-aus-Berlin-Tegel/!5922963/)
-
-
-  Freie Journalistin und Autorin für DLF Kultur, Süddeutsche Zeitung, Berliner
-  Zeitung und Praxis
+  Freie Journalistin und Autorin für die taz, DLF Kultur, Süddeutsche Zeitung,
+  Frankfurter Rundschau und Berliner Zeitung
 
 
   Reportagen / Soziale Gerechtigkeit  / Feminismus  / Religion / Inklusion /
   Geschichte
+
+
+  Oktober 2021 - Januar 2025
+
+
+  Redakteurin bei der taz, verantwortlich für das Reportageformat "nahaufnahme"
+
+
+  Oktober 2022 - Februar 2023 
+
+
+  Projektleiterin Lichtblick
+  (https://taz.de/Knastzeitung-aus-Berlin-Tegel/!5922963/)
 
 
   Oktober 2019 - Okobter
